@@ -1,4 +1,4 @@
-function initialize(){
+function initialize(){move(-1);
   document.getElementById('board').innerHTML = '';
   var j = 0;
   for(i=0;i<64;i++){
