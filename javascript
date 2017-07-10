@@ -14,8 +14,6 @@ function initialize(){
     document.getElementById(48+i).innerHTML='<img src="figures/w.pawn.png" style="width:40px;height:40px;margin:5px;">';
   }
 
-
-
   document.getElementById('0').innerHTML='<img src="figures/b.rook.png" style="width:40px;height:40px;margin:5px;">';
   document.getElementById('7').innerHTML='<img src="figures/b.rook.png" style="width:40px;height:40px;margin:5px;">';
   document.getElementById('56').innerHTML='<img src="figures/w.rook.png" style="width:40px;height:40px;margin:5px;">';
@@ -40,6 +38,7 @@ function initialize(){
 var x=-1;
 
 function move(par){
+  if(par==-1){x=-1;return 0;}
   if(x==-1)x=par;
   else {z=document.getElementById(x).innerHTML;
         document.getElementById(par).innerHTML=z;
